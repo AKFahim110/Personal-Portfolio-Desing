@@ -1,7 +1,3 @@
-Sure! Here’s a professional and informative README.md file for your portfolio project, based on the contents of your index.html and the repo description:
-
----
-
 # Personal Portfolio
 
 This is a personal portfolio website for **Adalat Khan Fahim**, created using HTML, CSS, SCSS, and JavaScript. The portfolio showcases my background, skills, experiences, projects, publications, and contact information in a modern, animated, and responsive single-page design.
