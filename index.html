@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Adalat Khan Fahim Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Adalat Khan Fahim</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+<section id="home-section" class="hero">
+  <div class="home-slider owl-carousel">
+    <div class="slider-item">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row d-md-flex no-gutters slider-text align-items-center justify-content-between" data-scrollax-parent="true">
+
+          <!-- Text Content Section -->
+          <div class="col-md-6 d-flex align-items-center ftco-animate">
+            <div class="text">
+              <span class="subheading animated-text" style="animation-delay: 0.3s;">Hello!</span>
+              <h1 class="mb-4 mt-3 animated-text" style="animation-delay: 0.6s;">I'm <span>Adalat Khan Fahim</span></h1>
+
+              <!-- Typing animation placeholder -->
+              <h2 class="animated-text" style="animation-delay: 0.9s;"><span id="typing-animation"></span></h2>
+
+              <h3 class="mt-3 animated-text" style="animation-delay: 1.2s;">A Researcher and Data Analyst</h3>
+
+              <!-- Buttons -->
+              <p class="mt-4 animated-text" style="animation-delay: 1.5s;">
+                <a href="https://www.linkedin.com/in/adalat-khan-fahim-87957a203/" class="btn btn-primary py-3 px-4" target="_blank">LinkedIn</a>
+                <a href="https://github.com/AKFahim110" class="btn btn-white btn-outline-white py-3 px-4" target="_blank">My Works</a>
+              </p>
+
+              <!-- Typing Animation Script -->
+              <script>
+                const typingAnimationElement = document.getElementById('typing-animation');
+                const typingTexts = ['Engineer', 'Traveller', 'Student'];
+                let currentText = 0;
+                let charIndex = 0;
+
+                function type() {
+                  if (charIndex < typingTexts[currentText].length) {
+                    typingAnimationElement.textContent += typingTexts[currentText].charAt(charIndex);
+                    charIndex++;
+                    setTimeout(type, 200);
+                  } else {
+                    setTimeout(() => {
+                      typingAnimationElement.textContent = '';
+                      charIndex = 0;
+                      currentText = (currentText + 1) % typingTexts.length;
+                      setTimeout(type, 200);
+                    }, 1500);
+                  }
+                }
+
+                type();
+              </script>
+
+            </div>
+          </div>
+
+          <!-- Background Image Section with descend animation -->
+          <div class="col-md-6 js-fullheight img bg-descend"
+               style="background-image: url('images/bg_1.png'); 
+                      background-position: right bottom; 
+                      background-size: contain; 
+                      background-repeat: no-repeat;">
+            <div class="overlay"></div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Extra CSS for animations -->
+  <style>
+    /* Text descend fade-in animation */
+    .animated-text {
+      opacity: 0;
+      transform: translateY(-20px); /* start 20px above */
+      animation-name: fadeSlideDown;
+      animation-fill-mode: forwards;
+      animation-duration: 0.8s;
+      animation-timing-function: ease-out;
+    }
+
+    @keyframes fadeSlideDown {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Background image descend fade-in animation */
+    .bg-descend {
+      opacity: 0;
+      transform: translateY(-50px); /* start 20px above */
+      animation: descendFromTop 0.8s ease-out forwards;
+      animation-delay: 0.5s; /* delay to start slightly after text begins */
+    }
+
+    @keyframes descendFromTop {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+
+</section>
+
+
+
+
+
+<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+  <div class="container">
+    <div class="row d-flex flex-column flex-md-row align-items-stretch">
+
+      <!-- Left Column -->
+      <div class="col-12 col-md-6 col-lg-5 d-flex mb-4 mb-md-0">
+        <div class="img-about img d-flex align-items-stretch w-100">
+          <div class="overlay p-3 w-100">
+            <div class="row">
+              <div class="col-6 col-md-5">
+                <div class="about-img">
+                  <img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="">
+                </div>
+              </div>
+              <div class="col-6 col-md-7">
+                <div class="about-info">
+                  <p><span class="title-s">Name: </span> <span>Adalat Khan Fahim</span></p>
+                  <p><span class="title-s">Job Role: </span> <span>Data Analyst</span></p>
+                  <p><span class="title-s">Experience: </span> <span>2 Years</span></p>
+                  <p><span class="title-s">Address: </span> <span>Sichuan, China</span></p>
+                  <p><span class="title-s">Nationality: </span> <span>Bangladesh</span></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Skills -->
+            <div class="skill-mf mt-4">
+              <p class="title-s">Expertise Skills</p>
+
+              <div class="d-flex justify-content-between"><span>SQL</span><span>70%</span></div>
+              <div class="progress mb-2">
+                <div class="progress-bar" style="width: 70%;"></div>
+              </div>
+
+              <div class="d-flex justify-content-between"><span>Python</span><span>60%</span></div>
+              <div class="progress mb-2">
+                <div class="progress-bar" style="width: 60%;"></div>
+              </div>
+
+              <div class="d-flex justify-content-between"><span>Data Visualization</span><span>90%</span></div>
+              <div class="progress mb-2">
+                <div class="progress-bar" style="width: 90%;"></div>
+              </div>
+
+              <div class="d-flex justify-content-between"><span>Statistical Analysis</span><span>85%</span></div>
+              <div class="progress mb-2">
+                <div class="progress-bar" style="width: 85%;"></div>
+              </div>
+
+              <div class="d-flex justify-content-between"><span>Machine Learning</span><span>80%</span></div>
+              <div class="progress mb-2">
+                <div class="progress-bar" style="width: 80%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+
+      <!-- Right Column -->
+      <div class="col-12 col-md-6 col-lg-7 pl-lg-5 pb-5">
+        <div class="heading-section ftco-animate text-center text-md-start">
+          <h1 class="big">About</h1>
+          <h2 class="mb-4">About Me</h2>
+         <p>I blend technical expertise in C, C++, Python, and SQL with cross-industry leadership experience across tech, education, and global operations. As a Customer Data Analyst at Aiper (China), I honed problem-solving skills in high-pressure environments, while my internship as a Data Analyst at Chengdu Suncaper Data Co.&nbsp;Ltd. refined my ability to derive actionable insights from complex datasets. My international exposure spans administrative coordination for POSCO E&C (Korea), material control leadership at Toshiba (Japan), and fostering communication as an English Teacher in Bangladesh.</p>
+          <ul class="about-info mt-4 px-0">
+            <li class="d-flex flex-wrap"><span>Profile:</span><span>Data Science & Analytics</span></li>
+            <li class="d-flex flex-wrap"><span>Domain:</span><span>Retail, Ecommerce, B2B & Medical Image Data Analysis</span></li>
+            <li class="d-flex flex-wrap"><span>Education:</span><span>Bachelor of Engineering</span></li>
+            <li class="d-flex flex-wrap"><span>Language:</span><span>Bengali, English, Chinese, Hindi</span></li>
+            <li class="d-flex flex-wrap"><span>BI Tools:</span><span>Microsoft Power BI, Looker & Tableau</span></li>
+            <li class="d-flex flex-wrap"><span>Other Skills:</span><span>Cloud, PySpark, Excel, Git, JIRA, Zeepline, Hadoop</span></li>
+            <li class="d-flex flex-wrap"><span>Interest:</span><span>Geography and Geopolitics </span></li>
+          </ul>
+        </div>
+
+        <div class="counter-wrap ftco-animate d-flex justify-content-center justify-content-md-start mt-4">
+          <div class="text text-center text-md-start">
+            <p class="mb-4">
+              <span class="number" data-number="20">0</span><span>+</span> Projects Completed
+            </p>
+            <p><a href="https://www.linkedin.com/in/adalat-khan-fahim-87957a203/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>Enthusiastic Software Engineering student with hands-on experience in business data analysis, customer service, and administrative roles. Proven leadership as a team lead and department head, with a strong passion for teaching, communication, and integrating technology into diverse environments.</p>
+          </div>
+        </div>
+
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">August 2024-March 2025</span>
+						<h2>Business Data Analysis (Intern)</h2>
+						<span class="position">Aiper</span>
+						<p class="mt-4">Aiper, A Chinese company, global leader in cordless robotic pool cleaning technology, serving markets across the world. Modtly in USA, Canada, and Australia.
+							<ul>
+								<li>Analyzed business performance data across key regions (USA, Canada, Australia) to identify sales trends, customer preferences, and market opportunities.</li>
+								<li>Developed data-driven insights to optimize regional marketing strategies and inventory planning.</li>
+								<li>Created dashboards and reports to track KPIs such as conversion rates, customer retention, and regional demand fluctuations.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">March 2024-June 2024</span>
+						<h2>B2B Business Data Analysis (Intern)</h2>
+						<span class="position">Chengdu Suncaper Data Co. Ltd</span>
+						<p class="mt-4">A data-driven analytics firm empowering global brands with AI and machine learning solutions.
+							<ul>
+								<li>B2B business analysis using machine learning techniques to uncover market trends and optimize client strategies, enhancing data-driven decision-making.</li>
+								<li>Developed Python-based data visualizations on Zeppelin and built websites for recommendations and visualizations, while deploying big data tools (Hadoop, Spark, Hive) for processing large-scale datasets.</li>
+								<li>Led the team and utilized JIRA and Git for seamless collaboration and project management.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="row">
+			<!-- First Column - TOSHIBA Experience -->
+			<div class="col-md-6">
+				<div class="resume-wrap ftco-animate">
+					<span class="date">Feb 2020-June 2021</span>
+					<h2>Material Management Officer</h2>
+					<span class="position">TOSHIBA + TGL</span>
+					<p class="mt-4">The TOSHIBA-TGL joint venture served as the principal contractor responsible for the comprehensive execution of Matar Bari 2x600MW ultra-supercritical coal-fired power plant.
+						<ul>
+							<li>Analyzed civil/electrical architectural designs to forecast and manage material inventory, ensuring 100% compliance with JIS.</li>
+							<li>Coordinate with 15+ global vendors to streamline procurement of critical electrical components (transformers, switchgears, cables)</li>
+							<li>lead a 18-member material department, Analyzed material specifications, optimizing stock levels and minimizing waste.</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+
+			<!-- Second Column - POSCO Experience -->
+			<div class="col-md-6">
+				<div class="resume-wrap ftco-animate">
+					<span class="date">June 2019 - Dec2019</span>
+					<h2>HR Assistant</h2>
+					<span class="position">Posco Engineering and Construction</span>
+					<p class="mt-4">A Lead Contractor for Civil Works (75% Project Budget in Civil work) of Matar Bari 2x600MW ultra-supercritical coal-fired power plant.
+						<ul>
+							<li>Served as HR Assistant, supporting workforce management for 500+ international staff across Bangladeshi, Korean, and Chinese teams.</li>
+							<li>Streamlined cross-cultural communication between POSCO's Korean management and local subcontractors, improving payroll and compliance efficiency.</li>
+							<li>Assisted in recruitment and onboarding for civil construction roles, ensuring timely staffing for concrete, structural, and foundation works.</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2021-2025</span>
+    					<h2>Bachelor of Engineering</h2>
+    					<span class="position">Sichuan University, China</span>
+    					<p class="mt-4">CGPA: 3.40 out of 4</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2018-2019</span>
+    					<h2>Higher Secondary Certificate</h2>
+    					<span class="position">Hajera Taju University College</span>
+    					<p class="mt-4">GPA: 5 out of 5</p>
+    				</div>
+				</div>
+    		</div>
+
+			<div class="row">
+			<div class="col-md-6">
+				<div class="resume-wrap ftco-animate">
+					<span class="date">2016-2017</span>
+					<h2>Secondary School Certificate</h2>
+					<span class="position">Chakaria Korak Biddyapith</span>
+					<p class="mt-4">GPA: 5 out of 5</p>
+				</div>
+			</div>
+
+			<div class="col-md-6">
+				<div class="resume-wrap ftco-animate">
+					<span class="date">2016</span>
+					<h2>Junior School Certificate</h2>
+					<span class="position">Matar Bari High School</span>
+					<p class="mt-4">GPA: 5 out of 5</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="row justify-content-center mt-5">
+		<div class="col-md-8 text-left ftco-animate">
+				<div class="publication-section mb-5">
+					<h3 class="mb-4">Publications</h3>
+					<div class="publication-item">
+						<p class="publication-title">Harnessing Large Language Models for Transformative Applications in Natural Language Processing</p>
+						<p class="publication-doi">
+							DOI: <a href="https://doi.org/10.59324/ejtas.2024.2(6).37" target="_blank" class="text-primary">10.59324/ejtas.2024.2(6).37</a>
+						</p>
+					</div>
+				</div>
+
+				<div class="thesis-section">
+					<h3 class="mb-4">Thesis</h3>
+					<div class="thesis-item">
+						<p class="thesis-title">Retinal Vessel Segmentation and Diabetic Retinopathy Classification Using Vessel Graph Based U-Net Approach</p>
+						<p class="thesis-note text-muted">(Nominated as best thesis paper of 2021 SCU foreign section)</p>
+					</div>
+				</div>
+
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            <p>This section highlights selected projects I have undertaken during my academic journey</p>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/AKFahim110/Big-Data-Yelp_Analaysis" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/AKFahim110/Big-Data-Yelp_Analaysis">Machine Learning, Data Analysis and Visualization on B2B Business</a></h3>
+                <p>Processes the Yelp dataset using Apache Spark (analytics), HDFS (storage), and Hive (warehousing), with visualizations in Apache Zeppelin. Includes reccomendation and visualizations on website</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/AKFahim110/Student-Management-System-of-Sichuan-University-using-DBMS" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/AKFahim110/Student-Management-System-of-Sichuan-University-using-DBMS">Sichuan University Student Management System</a></h3>
+                <p>The SCU Student Management System is a comprehensive project designed to manage student data efficiently using a Database Management System (DBMS).</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://github.com/AKFahim110/Retinal_Vessel_Segmentation-DR_Classification" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/AKFahim110/Retinal_Vessel_Segmentation-DR_Classification">Retinal Vessel Segmentation and DR Classification using Medical Image Data</a></h3>
+                <p>This project presents a comprehensive deep learning pipeline for retinal vessel segmentation and diabetic retinopathy classification based on a modified VGA-Net architecture.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+	<br>
+		<!-- added justify-content-center to center align the last two projects -->
+		<div class="row d-flex justify-content-center">  
+		<!-- Project 4 -->
+		<div class="col-md-4 d-flex ftco-animate">
+			<div class="blog-entry justify-content-end">
+			<a href="https://github.com/AKFahim110/Traffic-Control-System-with-YOLO-based-Congestion-Analysis" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');">
+			</a>
+			<div class="text mt-3 float-right d-block">
+				<h3 class="heading">
+				<a href="https://github.com/AKFahim110/Traffic-Control-System-with-YOLO-based-Congestion-Analysis">Traffic Control System Using YOLO-based Analysis</a>
+				</h3>
+				<p>This project implements a scalable traffic control system using YOLO-based computer vision to measure congestion and manage traffic flow in real-time.</p>
+			</div>
+			</div>
+		</div>
+
+		<!-- Project 5 -->
+		<div class="col-md-4 d-flex ftco-animate">
+			<div class="blog-entry justify-content-end">
+			<a href="https://github.com/AKFahim110/The-Shooter-Man/tree/main" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');">
+			</a>
+			<div class="text mt-3 float-right d-block">
+				<h3 class="heading">
+				<a href="https://github.com/AKFahim110/The-Shooter-Man/tree/main">The Shooter Man - Advance 2D Game</a>
+				</h3>
+				<p>A 2D side-scrolling shooter game built with Pygame. Players control a soldier to jump, shoot, and throw grenades across multiple levels with dynamic environments.</p>
+			</div>
+			</div>
+		</div>
+
+		<!-- Project 6 -->
+		<div class="col-md-4 d-flex ftco-animate">
+			<div class="blog-entry justify-content-end">
+			<a href="https://github.com/AKFahim110/3D-Puppet-Manipulation" class="block-20 zoom-effect" style="background-image: url('images/proj_6.jpg');">
+			</a>
+			<div class="text mt-3 float-right d-block">
+				<h3 class="heading">
+				<a href="https://github.com/AKFahim110/3D-Puppet-Manipulation">3D Puppet Simulator using C++</a>
+				</h3>
+				<p>A 3D puppet simulator developed in C++ allowing users to animate a puppet model using various commands, with interactive camera and lighting controls.</p>
+			</div>
+			</div>
+		</div>
+		</div>
+
+    </section>
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+  <div class="container">
+    <div class="row d-md-flex align-items-center">
+      
+		<!-- Best Thesis Paper -->
+		<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+			<div class="block-18">
+			<div class="text">
+				<strong class="number" data-number="2">0</strong>
+				<span>2nd Position in 23rd National College student Robot Man Competition-RoboCon 2024</span>
+			</div>
+			</div>
+		</div>
+		
+		<!-- Academic Projects -->
+		<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+			<div class="block-18">
+			<div class="text">
+				<strong class="number" data-number="30">0</strong>
+				<span>Academic Projects</span>
+			</div>
+			</div>
+		</div>
+
+		<!-- Cups of Coffee -->
+		<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+			<div class="block-18">
+			<div class="text">
+				<strong class="number" data-number="25">0</strong>
+				<span>2025 best thesis paper of SCU foreign section</span>
+			</div>
+			</div>
+		</div>
+
+		</div>
+	</div>
+	</section>
+
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<!-- <div class="container"> -->
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>More projects on<span> Github  </span> </h2>
+						<div class="heading"> <h4> Passionate about problem-solving &amp; love to explorenew ideas</h4>
+						<br>
+						<p><a href="https://github.com/AKFahim110" class="btn btn-primary py-3 px-5">GitHub</a></p>
+						</div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Present Address</h3>
+	            <p>Chengdu, Sichuan, China</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://0101010101">+86 18628247859</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:info@yoursite.com">akfahim@qq.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Download Resume</h3>
+	            <p><a href="#">resumelink</a></p>
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question?  </span> <a href="https://docs.google.com/forms/d/e/1FAIpQLScG3v4C64mcqCc5OJpOGhaEns-XNQlTDClBkttZ2fFjwuGCzQ/viewform?usp=header" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+				</div>
+			</div>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					  <!-- <li class="ftco-animate"><a href="https://www.youtube.com/@RishabhMishraOfficial"><span class="icon-youtube"></span></a></li> -->
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/adalat-khan-fahim-87957a203/"><span class="icon-linkedin"></span></a></li>  
+					  <li class="ftco-animate"><a href="https://x.com/fa_him15"><span class="icon-twitter"></span></a></li>
+					  <li class="ftco-animate"><a href="https://www.facebook.com/akfahimmb/"><span class="icon-facebook"></span></a></li>
+				      <li class="ftco-animate"><a href="https://www.instagram.com/akfahimmb/"><span class="icon-instagram"></span></a></li>
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>	
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">AKFahim</a>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
